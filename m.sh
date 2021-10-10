@@ -1,3 +1,5 @@
+#!/usr/bin/bash
+
 # Executing Iwconfig 
 sudo iwconfig
 
@@ -6,7 +8,7 @@ echo "Iface : "
 read iface
 
 # Asking User To Choose Between Enabling Or Disabling Monitor Mode
-echo "Enable Or Disable Montitor Mode ?    1 - (Enable)  2- (Disable) "
+echo " 1- (Enable)  2- (Disable) "
 read ch
 
 # Doing What User Has Choosen
@@ -23,5 +25,4 @@ else
 	sudo iw dev $iface set type managed
 	echo "Done ..."
 
-	fi
-
+fi
